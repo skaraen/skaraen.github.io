@@ -51,28 +51,75 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-<tr onmouseout="nexf_stop()" onmouseover="nexf_start()">
+    
+    <tr onmouseout="qlearn_stop()" onmouseover="qlearn_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nexf_image'>
-					  <img src='images/nexf_after.jpg' width=100%>
-					</div>
-          <img src='images/nexf_before.jpg' width=100%>
+          <div class="two" id='qlearn_image'>
+            <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
+              <source src="images/particle_filter.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src='images/aruco.png' width="160" height="160" style="object-fit:cover;">
         </div>
         <script type="text/javascript">
-          function nexf_start() {
-            document.getElementById('nexf_image').style.opacity = "1";
+          function qlearn_start() {
+            document.getElementById('qlearn_image').style.opacity = "1";
+            const vid = document.querySelector("#qlearn_image video");
+            vid.playbackRate = 8.0;
           }
 
-          function nexf_stop() {
-            document.getElementById('nexf_image').style.opacity = "0";
+          function qlearn_stop() {
+            document.getElementById('qlearn_image').style.opacity = "0";
           }
-          nexf_stop()
+          qlearn_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <span class="papertitle">Particle Localization using Beam Models for Range Finders</span>
+        <span class="papertitle">Autonomous Organizer using Q-Learning and Computer Vision</span>
+        <br>
+        <strong>Karaen Senthilkumar</strong>,
+        <a href="https://xpenguchi.github.io/">Omar Elshaikh</a>
+        <br>
+        <em>Robotics</em>
+        <br>
+        <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a>
+        /
+        <a href="">video</a>
+        <p></p>
+        <p>
+          Determining optimal robot actions using Q-learning to reach a goal state where colored objects align with their target tags. Used computer vision to detect object colors and ArUco tags and executed optimal policy based on the converged Q-matrix.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="pfilter_stop()" onmouseover="pfilter_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='pfilter_image'>
+            <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
+              <source src="images/particle_filter.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src='images/particle_filter.jpg' width="160" height="160" style="object-fit:cover;">
+        </div>
+        <script type="text/javascript">
+          function pfilter_start() {
+            document.getElementById('pfilter_image').style.opacity = "1";
+            const vid = document.querySelector("#pfilter_image video");
+            vid.playbackRate = 8.0;
+          }
+
+          function pfilter_stop() {
+            document.getElementById('pfilter_image').style.opacity = "0";
+          }
+          pfilter_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Particle Filter using Beam Models for Range Finders</span>
         <br>
         <strong>Karaen Senthilkumar</strong>,
         <a href="https://xpenguchi.github.io/">Xiaopeng Zhang</a>
@@ -84,7 +131,7 @@
         <a href="">video</a>
         <p></p>
         <p>
-		Learning a neural field that optimizes exposure for each 3D point enables high-quality 3D-consistent view synthesis despite extreme exposure variation during capture.
+          Solving the problem of Turtlebot4 localization in maze using particle filter algorithm. Used beam model for range finders to learn robot's surrondings and applied them on particle cloud of hypothesis to estimate pose of robot.
         </p>
       </td>
     </tr>
@@ -134,7 +181,7 @@
       </td>
     </tr> -->
 	
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
+    <!-- <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
@@ -4401,12 +4448,12 @@ for Topologically Varying Neural Radiance Fields</span>
                 <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
                 <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
               </td>
-            </tr>
+            </tr> -->
 
           </tbody></table>
 
           
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+					<!-- <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
                 <h2>Miscellanea</h2>
@@ -4493,13 +4540,13 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
             
-          </tbody></table>
+          </tbody></table> -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
-                <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                <p style="text-align:center;font-size:small;">
+                  Website's design is inspired from <a href="https://jonbarron.info/">Jon Barron</a>. Here's a link to the <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
                 </p>
               </td>
             </tr>
