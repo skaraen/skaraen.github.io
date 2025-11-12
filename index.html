@@ -57,11 +57,11 @@
         <div class="one">
           <div class="two" id='qlearn_image'>
             <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
-              <source src="images/particle_filter.mp4" type="video/mp4"/>
+              <source src="images/q_learning.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
           </div>
-          <img src='images/aruco.png' width="160" height="160" style="object-fit:cover;">
+          <img src='images/q_learning.png' width="160" height="160" style="object-fit:cover;">
         </div>
         <script type="text/javascript">
           function qlearn_start() {
@@ -80,9 +80,9 @@
         <span class="papertitle">Autonomous Organizer using Q-Learning and Computer Vision</span>
         <br>
         <strong>Karaen Senthilkumar</strong>,
-        <a href="https://xpenguchi.github.io/">Omar Elshaikh</a>
+        <a href="https://www.linkedin.com/in/omar-elshaikh-67566b273/">Omar Elshaikh</a>
         <br>
-        <em>Robotics</em>
+        <em>Robotics, Q-Learning, Computer Vision</em>
         <br>
         <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a>
         /
@@ -109,7 +109,7 @@
           function pfilter_start() {
             document.getElementById('pfilter_image').style.opacity = "1";
             const vid = document.querySelector("#pfilter_image video");
-            vid.playbackRate = 8.0;
+            vid.playbackRate = 16.0;
           }
 
           function pfilter_stop() {
@@ -124,7 +124,7 @@
         <strong>Karaen Senthilkumar</strong>,
         <a href="https://xpenguchi.github.io/">Xiaopeng Zhang</a>
         <br>
-        <em>Robotics</em>
+        <em>Robotics, SLAM</em>
         <br>
         <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a>
         /
@@ -132,6 +132,47 @@
         <p></p>
         <p>
           Solving the problem of Turtlebot4 localization in maze using particle filter algorithm. Used beam model for range finders to learn robot's surrondings and applied them on particle cloud of hypothesis to estimate pose of robot.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="genetics_stop()" onmouseover="genetics_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='genetics_image'>
+            <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
+              <source src="images/q_learning2.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src='images/gregor.png' width="160" height="160" style="object-fit:cover;">
+        </div>
+        <script type="text/javascript">
+          function genetics_start() {
+            document.getElementById('genetics_image').style.opacity = "1";
+            const vid = document.querySelector("#genetics_image video");
+            vid.playbackRate = 8.0;
+          }
+
+          function genetics_stop() {
+            document.getElementById('genetics_image').style.opacity = "0";
+          }
+          qlearn_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Genetics Land</span>
+        <br>
+        <a href="https://www.linkedin.com/in/jessica-markman-9aaaa1285/">Jessica Mann</a>,
+        <strong>Karaen Senthilkumar</strong>,
+        <a href="https://www.linkedin.com/in/ziyi-liu-sunny/">Ziyi (Sunny) Liu</a>,
+        <a href="https://www.linkedin.com/in/sawiros-abebe-648663276/">Sawiros Abebe</a>
+        <br>
+        <em>Game Development, Bioinformatics</em>
+        <br>
+        <p></p>
+        <p>
+          Simplying the complex ideas related to DNA sequences and ASO synthesis using an interactive 3D Unity multiplayer game. Scheduled to release in Winter 2026.
         </p>
       </td>
     </tr>
