@@ -43,7 +43,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Projects and Research</h2>
+                <h2>Recent Projects and Research</h2>
                 <p>
                   I have worked across diverse domains including high-performance computing, robotics, deep learning, and game development - not out of a lack of focus, but out of curiosity and a genuine drive to explore any field that challenges and excites me. Few of my works below are <span class="highlight">highlighted</span> to showcase the same.
                 </p>
@@ -51,6 +51,93 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="nbody_stop()" onmouseover="nbody_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nbody_image' style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+            <video  width=100% height=100% muted autoplay loop style="width:100%; height:100%; object-fit:cover; object-position:center;">
+              <source src="images/nbody_bh3.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <img src='images/nbody_bh3.png' width="160" height="160" style="object-fit:cover;">
+        </div>
+        <script type="text/javascript">
+          function nbody_start() {
+            document.getElementById('nbody_image').style.opacity = "1";
+            const vid = document.querySelector("#nbody_image video");
+            vid.playbackRate = 2.0;
+          }
+
+          function nbody_stop() {
+            document.getElementById('nbody_image').style.opacity = "0";
+          }
+          nbody_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">N-Body simulation using Barnes-Hut approximation</span>
+        <br>
+        <strong>Karaen Senthilkumar</strong>,
+        Abeen Bhattacharya
+        <br>
+        <em>High-Performance Computing, Simulation, GPU Programming</em>
+        <br>
+        <a href="https://github.com/skaraen/barnes-hut-nbody">project page</a>
+        <!-- / -->
+        <!-- <a href="">video</a> -->
+        <p></p>
+        <p>
+          Simulating gravitational interactions an N-body system on GPUs with both brute-force and Barnes–Hut kernels.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="draco_stop()" onmouseover="draco_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='draco_image' style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+            <video  width=100% height=100% muted autoplay loop style="width:100%; height:100%; object-fit:cover; object-position:center;">
+              <source src="images/hello_demo.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <img src='images/hello_demo.png' width="160" height="160" style="object-fit:cover;">
+        </div>
+        <script type="text/javascript">
+          function draco_start() {
+            document.getElementById('draco_image').style.opacity = "1";
+            const vid = document.querySelector("#draco_image video");
+            vid.playbackRate = 32.0;
+          }
+
+          function draco_stop() {
+            document.getElementById('draco_image').style.opacity = "0";
+          }
+          draco_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">FRACO - Flow-matching based Robot Arm Controller</span>
+        <br>
+        <strong>Karaen Senthilkumar</strong>,
+        <a href="https://xpenguchi.github.io/">Xiaopeng Zhang</a>,
+        <a href="https://www.linkedin.com/in/omar-elshaikh-67566b273/">Omar Elshaikh</a>
+        <br>
+        <em>Robotics, Flow matching, Movement Planning</em>
+        <br>
+        <a href="https://github.com/skaraen/DRACO">project page</a>
+        <!-- / -->
+        <!-- <a href="">video</a> -->
+        <p></p>
+        <p>
+          Using flow-matching to plan movement for robot arm that turns user's trace on GUI into real joint-angle motions and replicates it on a whiteboard.
+        </p>
+      </td>
+    </tr>
     
     <tr onmouseout="qlearn_stop()" onmouseover="qlearn_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -84,9 +171,9 @@
         <br>
         <em>Robotics, Q-Learning, Computer Vision</em>
         <br>
-        <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a>
-        /
-        <a href="">video</a>
+        <!-- <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a> -->
+        <!-- / -->
+        <!-- <a href="">video</a> -->
         <p></p>
         <p>
           Determining optimal robot actions using Q-learning to reach a goal state where colored objects align with their target tags. Used computer vision to detect object colors and ArUco tags and executed optimal policy based on the converged Q-matrix.
@@ -126,9 +213,9 @@
         <br>
         <em>Robotics, SLAM</em>
         <br>
-        <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a>
-        /
-        <a href="">video</a>
+        <!-- <a href="https://github.com/Intro-Robotics-UChicago-Fall-2025/particle-filter-project-marco_polo">project page</a> -->
+        <!-- / -->
+        <!-- <a href="">video</a> -->
         <p></p>
         <p>
           Solving the problem of Turtlebot4 localization in maze using particle filter algorithm. Used beam model for range finders to learn robot's surrondings and applied them on particle cloud of hypothesis to estimate pose of robot.
@@ -140,22 +227,22 @@
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='genetics_image'>
-            <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
-              <source src="images/q_learning2.mp4" type="video/mp4"/>
+            <!-- <video  width=100% height=100% muted autoplay loop style="object-fit:cover;">
+              <source src="images/q_learning.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
-            </video>
+            </video> -->
           </div>
           <img src='images/gregor.png' width="160" height="160" style="object-fit:cover;">
         </div>
         <script type="text/javascript">
           function genetics_start() {
-            document.getElementById('genetics_image').style.opacity = "1";
-            const vid = document.querySelector("#genetics_image video");
-            vid.playbackRate = 8.0;
+            // document.getElementById('genetics_image').style.opacity = "1";
+            // const vid = document.querySelector("#genetics_image video");
+            // vid.playbackRate = 8.0;
           }
 
           function genetics_stop() {
-            document.getElementById('genetics_image').style.opacity = "0";
+            // document.getElementById('genetics_image').style.opacity = "0";
           }
           qlearn_stop()
         </script>
